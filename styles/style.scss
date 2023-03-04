@@ -1,0 +1,65 @@
+
+@charset "utf-8";
+@import "compass";
+
+// @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Abel');
+
+// $baseFontFamily : "Yu Mincho","メイリオ" ,Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// @mixin fontsize($size: 24){
+//   font-size:$size + px;
+//   font-size:($size / 10) * 1rem;
+// }
+
+
+$base: #002D70;
+$sub1: #2A2A2A;
+$sub2: #FEFEFE;
+$sub3: #707070;
+$sub4: #cc0000;
+$ginsusu:#82663A;
+
+$bl: #000;
+$wh: #fff;
+
+$twitter:#00acee;
+$discord:#5865F2;
+
+$breakpoints: (
+  'md' : 'screen and (min-width:800px)',
+  'bg' : 'screen and (min-width:960px)'
+)!default;
+@mixin mq($breakpoint:md){
+  @media #{map-get($breakpoints, $breakpoint)}{
+    @content;
+  }
+}
+@mixin mq2($breakpoint:bg){
+  @media #{map-get($breakpoints, $breakpoint)}{
+    @content;
+  }
+}
+
+
+
+body{
+    padding-bottom:100px;
+}
+.Home_listingGrid__Bw1dz{
+    padding-bottom:120px;
+    max-width:1080px;
+    margin:0 auto;
+}
+
+.Home_listingShortView__byf0J{
+    @include mq{
+        min-height:420px;
+        // max-height:560px;
+        // max-height:430px;
+        // height:430px;
+        .Home_name__Je8n6{
+            font-size:1rem;
+        }
+    }
+}

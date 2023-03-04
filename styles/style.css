@@ -1,0 +1,15 @@
+body {
+  padding-bottom: 100px; }
+
+.Home_listingGrid__Bw1dz {
+  padding-bottom: 120px;
+  max-width: 1080px;
+  margin: 0 auto; }
+
+@media screen and (min-width: 800px) {
+  .Home_listingShortView__byf0J {
+    min-height: 420px; }
+    .Home_listingShortView__byf0J .Home_name__Je8n6 {
+      font-size: 1rem; } }
+
+/*# sourceMappingURL=style.css.map */
